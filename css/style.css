@@ -1,0 +1,144 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --darker-cyan: hsl(158, 36%, 25%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --montserrat-font: 'Montserrat', sans-serif;
+    --fraunces-font: 'Fraunces', serif;
+    ;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--cream);
+}
+
+.element--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 90%;
+    max-width: 375px;
+    overflow: hidden;
+    border-radius: .5em;
+    background-color: var(--white);
+}
+
+.main__details {
+    padding: 1.2em;
+}
+
+.main__image {
+    width: 100%;
+}
+
+.main__image--desktop {
+    display: none;
+}
+
+.main__product {
+    margin: 0;
+    font-family: var(--montserrat-font);
+    font-size: 14px;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+    color: var(--dark-grayish-blue);
+}
+
+.main__name {
+    margin-block: 10px;
+    font-family: var(--fraunces-font);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.main__description {
+    margin: 0;
+    font-family: var(--montserrat-font);
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+}
+
+.main__price {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.main__new-price {
+    margin-block: .9em;
+    font-family: var(--fraunces-font);
+    font-size: 1.8rem;
+    color: var(--dark-cyan);
+}
+
+.main__old-price {
+    font-family: var(--montserrat-font);
+    font-size: .8rem;
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+}
+
+.main__button {
+    width: 100%;
+    padding: 1.1em;
+    gap: 1em;
+    font-family: var(--montserrat-font);
+    color: var(--white);
+    border: none;
+    border-radius: .5em;
+    background-color: var(--dark-cyan);
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.main__button:hover {
+    background-color: var(--darker-cyan);
+}
+
+.footer {
+    min-height: 5vh;
+}
+
+.footer__text {
+    font-size: 0.8rem;
+    font-family: var(--montserrat-font);
+}
+
+.footer__link {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--dark-cyan);
+}
+
+@media screen and (min-width: 1150px) {
+    .main {
+        display: flex;
+        align-items: center;
+        max-width: 550px;
+    }
+
+    .main__image {
+        width: 50%;
+    }
+
+    .main__image--desktop {
+        display: block;
+    }
+
+    .main__image--mobile {
+        display: none;
+    }
+}
