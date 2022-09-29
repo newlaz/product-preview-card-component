@@ -28,7 +28,7 @@ body {
 }
 
 .main {
-    width: 90%;
+    width: 80%;
     max-width: 375px;
     overflow: hidden;
     border-radius: .5em;
