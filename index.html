@@ -1,45 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Product preview card component</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Mentor | Product preview card component</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
-    rel="stylesheet">
-</head>
-
-<body class="element--center">
-  <main class="main">
-    <img class="main__image main__image--desktop" src="./images/image-product-desktop.jpg" alt="perfume-bottle">
-    <img class="main__image main__image--mobile" src="./images/image-product-mobile.jpg" alt="perfume-bottle">
-    <div class="main__details">
-      <div class="main__text">
-        <p class="main__product">Perfume</p>
-        <h2 class="main__name">Gabrielle Essence Eau De Parfum</h2>
-        <p class="main__description">
-          A floral, solar and voluptuous interpretation composed by Olivier Polge,
-          Perfumer-Creator for the House of CHANEL.
-        </p>
-        <div class="main__price">
-          <p class="main__new-price">$149.99</p>
-          <p class="main__old-price">$169.99</p>
+  <body class="element--center">
+    <main class="main">
+      <div class="main__card">
+        <picture class="main__picture">
+          <source
+            media="(min-width:1150px)"
+            srcset="./images/image-product-desktop.jpg"
+          />
+          <img
+            src="./images/image-product-mobile.jpg"
+            alt="Gabrielle Parfum"
+            class="main__image"
+          />
+        </picture>
+        <div class="main__details">
+          <div class="main__text">
+            <p class="main__product">Perfume</p>
+            <h2 class="main__name">Gabrielle Essence Eau De Parfum</h2>
+            <p class="main__description">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+            <div class="main__price">
+              <p class="main__new-price">$149.99</p>
+              <p class="main__old-price">$169.99</p>
+            </div>
+          </div>
+          <button class="main__button element--center">
+            <img
+              class="main__button-image"
+              src="./images/icon-cart.svg"
+              alt="cart-icon"
+            />
+            Add to cart
+          </button>
         </div>
       </div>
-      <button class="main__button element--center"><img class="main__button-image" src="./images/icon-cart.svg"
-          alt="cart-icon"> Add to cart</button>
-    </div>
-  </main>
-  <footer class="footer element--center">
-    <p class="footer__text">
-      Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a class="footer__link" href="https://www.linkedin.com/in/bryanlazodev/">Bryan Lazo</a>.
-    </p>
-  </footer>
-</body>
-
+    </main>
+    <footer class="footer element--center">
+      <p class="footer__text">
+        Challenge by
+        <a
+          class="footer__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a class="footer__link" href="https://www.linkedin.com/in/bryanlazodev/"
+          >Bryan Lazo</a
+        >.
+      </p>
+    </footer>
+  </body>
 </html>
